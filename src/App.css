@@ -1,0 +1,68 @@
+:root{
+ --mainBlue: #2a2a72;
+ --lightBlue: #009ffd;
+ --mainWhite: #f3f3f3;
+ --mainDark: #232528;
+ --mainYellow: #ffa400;
+}
+body{
+  font-family: "Oswald", sans-serif !important;
+  background: var(--mainWhite) !important;
+  color: var(--mainDark) !important;
+}
+.text-title{
+  font-family: cursive;
+  letter-spacing: o.3rem;
+  text-transform: uppercase;
+}
+.text-blue{
+  color: var(--mainBlue);
+}
+.text-bright{
+  color: var(--lightBlue);
+}
+.img-container{
+  position: relative;
+  overflow: hidden;
+}
+.cart-btn{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  outline: none;
+  background-color: transparent;
+  padding: 5px 25px;
+  border-radius: 5px;
+  border: 2px solid var(--mainBlue);
+  transform: translate(100%, 10%);
+  transition: linear .6s;
+  color: var(--mainBlue);
+}
+.card-img-top{
+  transition: linear .6s;
+}
+.img-container:hover .card-img-top{
+  transform: scale(1.5);
+}
+.img-container:hover .cart-btn{
+  transform: translate(-0%, 0%);
+
+}
+.cart-btn:hover{
+  background-color: var(--mainBlue);
+  color: yellow;
+}
+.modalContainer{
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+  background-color: rgba(0, 2, 39, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#modal{
+  background-color: var(--mainWhite);
+}

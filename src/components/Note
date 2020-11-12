@@ -1,0 +1,6 @@
+1. keep app component into  <Router> for routing in dex.js
+2. For crating context
+// create ContextProvider  = crateContext
+// needs Consumer => and => product provider
+see documentation
+
